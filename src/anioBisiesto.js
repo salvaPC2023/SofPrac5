@@ -3,8 +3,10 @@ function esBisiesto(ano) {
       return true;
     } else if (ano % 100 === 0) {
       return false;
+    } else if (ano % 4 === 0) {
+        return true;
     } else {
-      return true;
+         return false;
     }
   }
   module.exports = esBisiesto;

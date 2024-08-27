@@ -1,12 +1,11 @@
-function esBisiesto(ano) {
-    if (ano % 400 === 0) {
+export function esBisiesto(anio) {
+    if (anio % 400 === 0) {
       return true;
-    } else if (ano % 100 === 0) {
+    } else if (anio % 100 === 0) {
       return false;
-    } else if (ano % 4 === 0) {
+    } else if (anio % 4 === 0) {
         return true;
     } else {
          return false;
     }
-  }
-  module.exports = esBisiesto;
+}

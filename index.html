@@ -1,15 +1,35 @@
-<html>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobador de Años Bisiestos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        input, button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprobador de Años Bisiestos</h1>
+    <form id="bisiesto-form">
+        <p>Introduce un año para comprobar si es bisiesto:</p>
+        <input type="number" id="inputYear" placeholder="Escribe un año" />
+        <button type="submit">Comprobar</button>
     </form>
-    <div id="resultado-div"></div>
-
+    <div class="resultado" id="resultado"></div>
     <script type="module" src="./src/presenter.js"></script>
-  </body>
+</body>
 </html>
